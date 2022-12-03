@@ -1,0 +1,34 @@
+[package]
+name = "live-stream-blur"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "^0.24.5"
+rustface = "0.1.7"
+piston = "0.53.0"
+piston2d-graphics = "0.43.0"
+pistoncore-glutin_window = "0.70.1"
+piston2d-opengl_graphics = "0.82.0"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.nokhwa]
+version = "0.9.4"
+features = ["default", "input-msmf"]
+
+[dependencies.imageproc]
+version = "0.23.0"
+features = ["default"]
+
+#[dependencies.sdl2]
+#version = "^0.34.0"
+#default-features = false
+#features = ["ttf", "image", "gfx", "mixer", "static-link", "use-vcpkg"]
+
+#[package.metadata.vcpkg]
+#dependencies = ["sdl2", "sdl2-image[libjpeg-turbo,tiff,libwebp]", "sdl2-ttf", "sdl2-gfx", "sdl2-mixer"]
+#git = "https://github.com/microsoft/vcpkg"
+#rev = "163fe7bd3d67c41200617caaa245b5ba2ba854e6"
+#
+#[package.metadata.vcpkg.target]
+#x86_64-pc-windows-msvc = { triplet = "x64-windows-static-md" }
